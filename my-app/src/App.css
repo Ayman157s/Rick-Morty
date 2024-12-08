@@ -1,125 +1,3 @@
-
-/*!*.app {*!*/
-/*!*  text-align: center;*!*/
-/*!*  padding: 20px;*!*/
-/*!*  max-width: 1280px;*!*/
-/*!*  margin: 0 auto;*!*/
-/*!*  align-items: center;*!*/
-/*!*  justify-items: center;*!*/
-/*!*  align-content: center;*!*/
-
-/*!*}*!*/
-
-/*!*.search-input {*!*/
-/*!*  margin: 20px;*!*/
-/*!*  padding: 10px;*!*/
-/*!*  font-size: 16px;*!*/
-/*!*}*!*/
-
-/*!*.character-grid {*!*/
-/*!*  display: grid;*!*/
-/*!*  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*!*/
-/*!*  gap: 20px;*!*/
-/*!*  padding: 20px;*!*/
-/*!*  max-width: 1280px;*!*/
-/*!*  margin: 0 auto;*!*/
-/*!*  align-items: center;*!*/
-/*!*  justify-items: center;*!*/
-/*!*  align-content: center;*!*/
-/*!*}*!*/
-
-/*!*!* CharacterCard.css *!*!*/
-/*!*.character-card {*!*/
-/*!*  background-color: #f4f4f4;*!*/
-/*!*  padding: 10px;*!*/
-/*!*  border-radius: 10px;*!*/
-/*!*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*!*/
-/*!*}*!*/
-
-/*!*.character-card img {*!*/
-/*!*  width: 100%;*!*/
-/*!*  border-radius: 10px;*!*/
-/*!*}*!*/
-
-/*!*.character-card h3 {*!*/
-/*!*  margin: 10px 0;*!*/
-/*!*  font-size: 1.2em;*!*/
-/*!*  color: #333;*!*/
-/*!*  font-weight: 600;*!*/
-/*!*}*!*/
-
-/*!*.character-card p {*!*/
-/*!*  margin: 0;*!*/
-/*!*  font-size: 0.9em;*!*/
-/*!*  color: #666;*!*/
-/*!*  font-weight: 400;*!*/
-/*!*}*!*/
-/*!* App.css *!*/
-/*.app {*/
-/*  text-align: center;*/
-/*  padding: 20px;*/
-/*  max-width: 1280px;*/
-/*  margin: 0 auto;*/
-/*  display: flex; !* Flexbox for center alignment *!*/
-/*  flex-direction: column; !* Stack children vertically *!*/
-/*  align-items: center; !* Center items horizontally *!*/
-/*}*/
-
-/*.search-input {*/
-/*  margin: 20px auto; !* Center horizontally *!*/
-/*  padding: 10px;*/
-/*  font-size: 16px;*/
-/*  width: 90%; !* Ensure responsiveness *!*/
-/*  max-width: 400px; !* Limit input width on larger screens *!*/
-/*  border: 1px solid #ccc;*/
-/*  border-radius: 5px;*/
-/*}*/
-
-/*.character-grid {*/
-/*  display: grid;*/
-/*  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); !* Responsive grid *!*/
-/*  gap: 20px;*/
-/*  padding: 20px;*/
-/*  width: 100%; !* Use full width of parent container *!*/
-/*  max-width: 1280px; !* Prevent overly wide grid *!*/
-/*  align-items: center;*/
-/*  justify-items: center;*/
-/*}*/
-
-/*!* CharacterCard.css *!*/
-/*.character-card {*/
-/*  background-color: #f4f4f4;*/
-/*  padding: 20px;*/
-/*  border-radius: 10px;*/
-/*  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
-/*  text-align: center; !* Center text within cards *!*/
-/*  display: flex; !* Flexbox for content alignment *!*/
-/*  flex-direction: column; !* Stack content vertically *!*/
-/*  align-items: center; !* Center content horizontally *!*/
-/*}*/
-
-/*.character-card img {*/
-/*  width: 100%;*/
-/*  border-radius: 10px;*/
-/*  max-width: 200px; !* Limit image size for responsiveness *!*/
-/*  height: auto; !* Maintain aspect ratio *!*/
-/*}*/
-
-/*.character-card h3 {*/
-/*  margin: 10px 0;*/
-/*  font-size: 1.2em;*/
-/*  color: #333;*/
-/*  font-weight: 600;*/
-/*}*/
-
-/*.character-card p {*/
-/*  margin: 5px 0; !* Add spacing between paragraphs *!*/
-/*  font-size: 0.9em;*/
-/*  color: #666;*/
-/*  font-weight: 400;*/
-/*  text-align: center;*/
-/*}*/
-/* App.css */
 .app {
   text-align: center;
   padding: 20px;
@@ -129,13 +7,13 @@
 
 .search-input {
   max-width: 400px;
-  margin: 0 auto; /* Center horizontally */
+  margin: 0 auto;
 }
 
 .character-grid {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for responsiveness */
-  justify-content: center; /* Center grid items */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -160,4 +38,56 @@
 .card-text {
   font-size: 0.9em;
   color: #666;
+}
+
+/* General font styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.character-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.character-details {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+.status.alive {
+  background-color: green;
+}
+
+.status.dead {
+  background-color: red;
+}
+
+.status.unknown {
+  background-color: gray;
+}
+
+.search-input {
+  max-width: 400px;
+}
+
+.character-grid {
+  margin-top: 20px;
 }
