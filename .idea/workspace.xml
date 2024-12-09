@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a48f1ca8-b550-41c6-810d-d4a6eb520540" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="a48f1ca8-b550-41c6-810d-d4a6eb520540" name="Changes" comment="improve user interface:&#10;-animation when hoovering on card.&#10;-animation when clicking on search. &#10;-improved responsiveness.&#10;added new feature when clicking on a card it shows character details &amp; added a back button to go back to the home page.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,9 +28,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ayman157s&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ayman157s/Rick-Morty.git&quot;,
+    &quot;accountId&quot;: &quot;618dcfcd-b9bb-46d8-a882-e0042cb4b8a9&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ptAFsAunFlLiobbuVbIxHHQW3T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,16 +57,58 @@
     "Node.js.index.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\MH\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/my-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,11 +124,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1733574899000</updated>
-      <workItem from="1733574899818" duration="7956000" />
+      <workItem from="1733574899818" duration="17808000" />
+      <workItem from="1733688115912" duration="9492000" />
     </task>
+    <task id="LOCAL-00001" summary="project complete">
+      <option name="closed" value="true" />
+      <created>1733598444585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733598444585</updated>
+    </task>
+    <task id="LOCAL-00002" summary="improve user interface:&#10;-animation when hoovering on card.&#10;-animation when clicking on search. &#10;-improved responsiveness.&#10;added new feature when clicking on a card it shows character details &amp; added a back button to go back to the home page.">
+      <option name="closed" value="true" />
+      <created>1733662007601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733662007601</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project complete" />
+    <MESSAGE value="improve user interface:&#10;-animation when hoovering on card.&#10;-animation when clicking on search. &#10;-improved responsiveness.&#10;added new feature when clicking on a card it shows character details &amp; added a back button to go back to the home page." />
+    <option name="LAST_COMMIT_MESSAGE" value="improve user interface:&#10;-animation when hoovering on card.&#10;-animation when clicking on search. &#10;-improved responsiveness.&#10;added new feature when clicking on a card it shows character details &amp; added a back button to go back to the home page." />
   </component>
 </project>

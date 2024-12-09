@@ -1,93 +1,118 @@
 .app {
-  text-align: center;
-  padding: 20px;
-  max-width: 100%;
-  margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: left;
 
+.status {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
 .search-input {
-  max-width: 400px;
-  margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .character-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .character-card {
-  background-color: #f4f4f4;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card-img-top {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-title {
-  font-size: 1.2em;
-  color: #333;
-  font-weight: 600;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 600;
 }
 
 .card-text {
-  font-size: 0.9em;
-  color: #666;
+    font-size: 0.9em;
+    color: #666;
 }
 
-/* General font styling */
 body {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .character-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .character-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.character-details:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
-  height: 200px;
-  object-fit: cover;
+    height: 200px;
+    object-fit: cover;
 }
 
 .character-details {
-  max-width: 600px;
-  margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .status {
-  padding: 5px 10px;
-  border-radius: 5px;
-  color: white;
-  display: inline-block;
-  font-size: 1.2em;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
 }
 
 .status.alive {
-  background-color: green;
+    background-color: #d4edda;
+    color: #155724;
 }
 
 .status.dead {
-  background-color: red;
+    background-color: #f8d7da;
+    color: #721c24;
 }
 
 .status.unknown {
-  background-color: gray;
+    background-color: #fff3cd;
+    color: #856404;
 }
 
 .search-input {
-  max-width: 400px;
+    max-width: 400px;
 }
 
 .character-grid {
-  margin-top: 20px;
+    margin-top: 20px;
 }
+
+.detailss {
+    text-align: left;
+}}

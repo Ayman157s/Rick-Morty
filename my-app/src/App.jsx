@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function CharacterCard({ character, onClick }) {
@@ -32,26 +32,30 @@ function CharacterCard({ character, onClick }) {
     );
 }
 
-function CharacterDetails({character, onClose}) {
+function CharacterDetails({ character, onClose }) {
     return (
-        <div className="character-details text-center">
-        <button className="btn btn-secondary mb-3" onClick={onClose}>
-                Back
-            </button>
-            <h2>{character.name}</h2>
-            <img
-                src={character.image}
-                alt={character.name}
-                className="img-fluid rounded mb-3"
-                style={{ maxWidth: '300px' }}
-            />
-            <p className={`status ${character.status.toLowerCase()} mb-3`}>
-                {character.status}
-            </p>
-            <p><strong>Gender:</strong> {character.gender}</p>
-            <p><strong>Location:</strong> {character.location.name}</p>
-            <p><strong>Origin:</strong> {character.origin.name}</p>
-            <p><strong>Species:</strong> {character.species}</p>
+        <div className="character-details-container">
+            <div className="character-details text-center p-4">
+                <h2 className="mb-3">{character.name}</h2>
+                <img
+                    src={character.image}
+                    alt={character.name}
+                    className="img-fluid rounded mb-3 imgg"
+                    style={{ maxWidth: '300px' }}
+                />
+                <p className={`status ${character.status.toLowerCase()} mb-3`}>
+                    {character.status}
+                </p>
+                <div className="detailss">
+                <p><strong>Gender:</strong> {character.gender}</p>
+                <p><strong>Location:</strong> {character.location.name}</p>
+                <p><strong>Origin:</strong> {character.origin.name}</p>
+                <p><strong>Species:</strong> {character.species}</p>
+                </div>
+                <button className="btn btn-secondary mt-3" onClick={onClose}>
+                    Back
+                </button>
+            </div>
         </div>
     );
 }
